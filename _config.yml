@@ -6,10 +6,10 @@
 name: Josh Millar
 
 # Short bio or description (displayed in the header)
-description: PhD @ Imperial
+description: PhD @ Imperial College London 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/yushan-huang/yushan-huang.github.io/master/images/profile.png
+avatar: https://raw.githubusercontent.com/j0shmillar/j0shmillar.github.io/master/images/profile.png
 
 #
 # Flags below are optional
@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/yushan-huang/yushan-huang.github.io/ma
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: echo "name@ic.ac.uk" | sed 's!name!j.millar!’
+  email: 
   facebook:
   flickr:
   github: 
