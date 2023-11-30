@@ -2,7 +2,7 @@
 layout: page
 title: 
 permalink: /publications/
-order: 2
+# order: 2
 ---
 
 also coming soon...(hopefully)
