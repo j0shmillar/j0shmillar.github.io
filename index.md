@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-permalink: 
+permalink: /
 order: 1
 ---
 
@@ -16,6 +16,10 @@ Specifically,
 <!-- Beside my PhD, I’m also Head of Data Science at Yokahu.  -->
 
 Please feel free to reach out!
+
+### Contact me
+
+[yushan.huang21@imperial.ac.uk](mailto:yushan.huang21@imperial.ac.uk)
 
 **news:**
 - ...
