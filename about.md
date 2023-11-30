@@ -14,11 +14,7 @@ My current research interests include:
 
 <!-- Beside my PhD, I’m also Head of Data Science at Yokahu.  -->
 
-Please feel free to reach out!
-
-### Contact
-
-[josh.millar22@imperial.ac.uk](mailto:josh.millar22@imperial.ac.uk)
+Please feel free to [reach out](mailto:josh.millar22@imperial.ac.uk)!
 
 ### News
 - ...
