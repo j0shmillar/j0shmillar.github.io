@@ -8,8 +8,6 @@ name: Josh Millar
 # Short bio or description (displayed in the header)
 description: |
         PhD @ Imperial College London
-        
-        echo "name@ic.ac.uk" | sed 's!name!j.millar!' 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/j0shmillar/j0shmillar.github.io/master/images/profile.png
