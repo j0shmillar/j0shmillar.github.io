@@ -1,290 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="yonglong_homepage">
 <head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="dkdMWGGXOg5t1rOodxNRFIiLj_f58hb9IdBE0cqfgbo" />
-    <link rel="icon" type="image/png" href="./user.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Millar</title>
-    <style>
-    @import url('https://rsms.me/inter/inter.css');
-    *, *::before, *::after { box-sizing: border-box }
-body { min-height: 100vh; min-height: 100svh; }
-body, h1, h2, h3, h4, p, figure, blockquote, dl, dd { margin: 0; }
-pre, input, button, textarea, select { font: inherit }
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72259564-3"></script> -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-:root
-{  font-size: 100%;
-/* font-synthesis: none; */
--webkit-text-size-adjust: none;
+  gtag('config', 'UA-72259564-3');
+</script>
+<meta name="google-site-verification" content="dkdMWGGXOg5t1rOodxNRFIiLj_f58hb9IdBE0cqfgbo" />
+<link rel="icon" type="image/png" href="./user.png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="Josh Millar; ML; battery-free; sustainability; vision; energy-harvesting; energy-aware; PhD; Imperail; Oxford; Cambridge ">
+<!-- <link rel="author" href="http://people.csail.mit.edu/yonglong/"> -->
 
---font_headings: 'Inter', system-ui, sans-serif;
---font_body: 'Inter', system-ui, sans-serif;
---font_mono: monospace;
+	<title>Yonglong Tian</title>
+	<style>
 
---font_m: 1rem; --leading_m: 1.5rem;
---font_s: 0.82rem;
---font_l: 1.125rem; --leadig_l: 1.34rem;
---font_xl: 1.5rem; --leading_xl: 1.8rem;
---font_xxl: 2.5rem; --leading_xxl: 3rem;
-
---font_mono_ratio:
-/* mono / body size, difficult to find a good cross-browser value */
-    0.92;
---leading_mono_m: calc(var(--leading_m) * var(--font_mono_ratio));
-
---sp_xxs: calc(0.25 * var(--leading_m));
---sp_xs: calc(0.5 * var(--leading_m));
---sp_s: calc(0.75 * var(--leading_m));
---sp_m: var(--leading_m);
---sp_l: calc(1.125 * var(--leading_m));
---sp_xl: calc(1.5 * var(--leading_m));
---sp_xxl: calc(2.0 * var(--leading_m));
-
---measure_m: 73ch;
---page_inline_pad: var(--sp_m);
---page_block_pad: var(--sp_xl);
-
---blockquote_border: 2px solid #ACACAC;
---rule_border: 1px solid #CACBCE;
---heading_border: 1px solid #EAECEF;
---table_cell_pad: 0.4em;
---table_hover: #f5f5f5;
---table_sep: #efefef;
---table_cell_inline_pad: 0.625em;
---table_cell_block_pad: 0.25em;
-
---code_span_bg: #EFF1F3;
---code_span_inline_pad: 0.35ch;
---code_block_bg: #F6F8FA;
---code_block_bleed: 0.8ch;
---code_block_block_pad: 1ch;
-
---a_fg: #0969DA;
---a_fg_hover: #1882ff;
---a_visited: #8E34A5;
---target_color: #FFFF96;
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
 }
-
-body
-{ font-family: var(--font_body); font-weight: 400;
-font-size: var(--font_m); line-height: var(--leading_m);
-max-inline-size: var(--measure_m);
-padding-block: var(--page_block_pad);
-padding-inline: var(--page_inline_pad);
-margin-inline: auto;
-background-color: white; color: black; }
-
-body > *:first-child { margin-block-start: 0 }
-body * + * { margin-block-start: var(--sp_xs) }
-
-/* Blocks */
-
-h1, h2, h3, h4, h5, h6
-{ font-family: var(--font_headings); font-weight: 600}
-
-h1 { font-size: var(--font_xxl); line-height: var(--leading_xxl);
-    margin-block-start: var(--sp_xl); }
-
-h3 + *, h4 + *, h5 + *, h6 + *
-{ margin-block-start: var(--sp_xs); }
-
-h2 { font-size: var(--font_xl); line-height: var(--leading_xl);
-    margin-block-start: var(--sp_m);
-    padding-block-end: var(--sp_xxs); }
-
-h3 { font-size: var(--font_l); line-height: var(--leading_l);
-    margin-block-start: var(--sp_m); }
-
-h4 { font-weight: 400; font-style: oblique; }
-
-ul, ol { padding-inline-start: 3ch; }
-li + li { margin-block-start: var(--sp_xxs); }
-
-li > .task { display: flex; margin:0; padding:0; align-items: baseline;
-            column-gap: var(--sp_xxs); }
-li > .task > input { padding:0; margin:0 }
-li > .task > div { margin:0; padding:0 }
-
-blockquote > blockquote { margin-inline: 0.25ch; }
-blockquote
-{  margin-inline: 2ch;
-padding-inline: 1ch;
-border-left: var(--blockquote_border) }
-
-hr + * { margin-block-start: calc(var(--sp_s) - 1px); }
-hr { border: 0; border-block-end: var(--rule_border);
-    width: 14ch;
-    margin-block-start: var(--sp_s); margin-inline: auto; }
-
-pre
-{ line-height: var(--leading_mono_m);
-white-space: pre-wrap;
-overflow-wrap: break-word;
-background-color: var(--code_block_bg);
-padding-block: var(--code_block_block_pad);
-padding-inline: var(--code_block_bleed);
-margin-inline: calc(-1.0 * var(--code_block_bleed)) }
-
-pre code { padding-inline: 0; background-color: inherit }
-
-[role="region"] { overflow: auto }
-table { border-collapse: separate; border-spacing: 0; white-space: nowrap }
-tr:hover > td { background: var(--table_hover) }
-th, td, th.left, td.left { text-align: left }
-th.right, td.right { text-align: right }
-th.center, td.center { text-align: center }
-td, th { border: 0px solid var(--table_sep); border-block-end-width: 1px }
-tr:first-child td { border-block-start-width: 1px; } /* headerless */
-th { font-weight: 600 }
-th, td { padding-inline: var(--table_cell_inline_pad);
-        padding-block: var(--table_cell_block_pad); }
-
-/* Inlines */
-
-code
-{ font-family: var(--font_mono);
-font-size: calc(1em * var(--font_mono_ratio));
-background-color: var(--code_span_bg);
-padding-inline: var(--code_span_inline_pad);
-border-radius: 3px;
-white-space: break-spaces; }
-
-a:hover { color: var(--a_fg_hover) }
-a:hover:visited { color: var(--a_visited); }
-a { color: var(--a_fg);
-text-decoration: underline;
-text-decoration-thickness: 0.04em;
-text-decoration-skip-ink: all;
-text-underline-offset: 3px; }
-
-*:hover > a.anchor { visibility: visible; }
-body > *:hover:first-child > a.anchor { visibility: hidden }
-a.anchor:visited { color: var(--a_fg); }
-a.anchor:before { content: "#";  }
-a.anchor:hover { color: var(--a_fg_hover); }
-a.anchor
-{ visibility: hidden; position: absolute;
-font-weight: 400; font-style: normal;
-font-size: 0.9em;
-margin-left: -2.5ch;
-padding-right: 1ch; padding-left: 1ch;
-color: var(--a_fg_hover);
-text-decoration: none; }
-
-*:target
-{ background-color: var(--target_color);
-box-shadow: 0 0 0 3px var(--target_color); }
-
-em { font-style: oblique }
-b, strong { font-weight: 600 }
-small { font-size: var(--font_s) }
-sub, sup { vertical-align: baseline;
-        font-size: 0.75em;
-        line-height: 0; position:relative }
-sub { bottom: -0.25em }
-sup { top: -0.5em }
-
-/* Footnotes */
-
-a.fn-label { text-decoration: none; }
-a:target.fn-label { box-shadow: none }
-
-[role="doc-endnotes"]
-{ font-size: 87.5%;
-line-height: calc(0.875 * var(--leading_m));
-margin-block-start: var(--sp_m);
-border-block-start: var(--rule_border); }
-[role="doc-endnotes"] > ol > li * + * { margin-block-start: var(--sp_xxs) }
-[role="doc-endnotes"] > ol { padding-inline-start: 2ex; }
-[role="doc-endnotes"] a.fn-label { padding-right:0.5ex; }
-
-[role="doc-endnotes"] > ol > li:target
-{ background-color: inherit; box-shadow: none }
-[role="doc-endnotes"] > ol > li:target::marker
-{ font-weight:900;}
-
-/** CODE STYLING **/
-pre code {
-background-color: #282828;
-display: block;
-padding: 1em;
-overflow-x: auto;
-border-radius: 5px;
-color: #ebdbb2
+p { font-size : 16px; }
+h1 { font-size : 34px; margin : 0; padding : 0; }
+h2 { font-size : 20px; margin : 0; padding : 0; }
+h3 { font-size : 18px; margin : 8; padding : 0; }
+h4 { font-size : 16px; margin : 4; padding : 0; }
+body { padding : 0; font-family : Arial; font-size : 16px; background-color : #fff; }
+.title { width : 650px; margin : 20px auto; }
+.container { width : 750px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both;}
+#bio {
+    padding-top : 40px;
 }
-
-span[class*='keyword'] {
-color: #fb4934
-}
-
-span[class*='constant'] {
-color: #fabd2f
-}
-
-span[class*='variable'] {
-color: #85ebeb;
-font-style: italic;
-}
-
-span[class*='support'] {
-color: #83a598;
-}
-
-span[class*='literal'] {
-color: #d3869b
-}
-
-span[class*='literal'] {
-color: #d3869b
-}
-
-span[class*='string'] {
-color: #b8bb26
-}
-
-span[class*='numeric'] {
-color: #ff5683
-}
-    </style>
+#me { border : 0 solid black; margin-bottom : 50px; border-radius : 10px; }
+#sidebar { margin-left : 25px; border : 0 solid black; float : right; margin-bottom : 0;}
+a { text-decoration : none; }
+a:hover { text-decoration : underline; }
+a, a:visited { color : #0050e7; }
+.publogo { width: 100 px; margin-right : 20px; float : left; border : 0;}
+.publication { clear : left; padding-bottom : 0px; }
+.publication p { height : 100px; padding-top : 5px;}
+.publication strong a { color : #0000A0; }
+.publication .links { position : relative; top : 15px }
+.publication .links a { margin-right : 20px; }
+.codelogo { margin-right : 10px; float : left; border : 0;}
+.code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
+.code .download a { display : block; margin : 0 15px; float : left;}
+.code strong a { color : #000; }
+.external a { margin : 0 10px; }
+.external a.first { margin : 0 10px 0 0; }
+	</style>
+	<!-- <script async="" src="yonglong/analytics.js"></script> -->
 </head>
-<body>
-    <h1>Josh Millar</h1>
-    <img src="pp.jpg" width="160">
-    <p>
-        <a href="mailto:joshua.millar22@imperial.ac.uk">email</a>,
-        <a href="https://github.com/j0shmillar/">github</a>
-    </p>
-    <h2>About</h2>
-    <p>
-    I'm a PhD student at <a href="https://www.imperial.ac.uk/computing/">Imperial College London</a>, 
-    based at the <a href="https://netsys.doc.ic.ac.uk">Networks and Systems Lab</a> at <a href="https://ix.imperial.ac.uk">Imperial-X</a>
-    (<a href="https://www.google.com/maps/place/Translation+%26+Innovation+Hub/@51.5157794,-0.2270655,17z/data=!3m1!4b1!4m6!3m5!1s0x487610284ec458a5:0x2d02eef5b80a7bb0!8m2!3d51.5157761!4d-0.2244906!16s%2Fg%2F11f08_gfbx?entry=ttu">White City</a>).
-    You can also occasionally catch me at the <a href="https://www.imperial.ac.uk/energy-futures-lab/">Energy Futures Lab</a><!-- + [Grantham Institute](https://www.imperial.ac.uk/grantham/) -->. 
-    </p>
-    <p>
-    I'm supervised by <a href="https://www.imperial.ac.uk/people/h.haddadi">Prof. Hamed Haddadi</a> and <a href="https://www.imperial.ac.uk/people/david.boyle">Dr. David Boyle</a>.
-    </p>
-    </p>
-    <p>
-    My current research interests include:
-    <ul>
-        <li>energy-aware ML (+ battery-free sensing)</li>
-        <li>applied ML for sustainability</li>
-        <li>near-term forecasting (i.e. "nowcasting")</li>
-    </ul>
-    </p>
-    <!-- Beside my PhD, I’m also Head of Data Science at Yokahu.  -->
-    Please feel free to <a href="mailto:joshua.millar22@imperial.ac.uk">reach out</a>.
-    <!-- <hr style="border-color: #0000FF; border-width: 3px;"> -->
-    <h2>News</h2>
-    <p>...</p>
-    <h2>Blog</h2>
-    <p>I sometimes document what I've been up to <a href="./posts">here</a>.</p>
-    <!-- <hr style="border-color: #0000FF; border-width: 3px;"> -->
-    <h2>Publications</h2>
-    <p>Coming soon...hopefully.</p>
-</body>
-</html>
+
+<body data-gr-c-s-loaded="true">
+	<div class="title">
+		<div id="sidebar"><img src="pp.jpg" id="me" itemprop="photo" width="160 px" vspace="50 px"></div>
+		<div id="bio">
+
+            <br>
+
+			<!-- <h1>
+				<span itemprop="name">Josh Millar</span>
+			</h1> -->
+
+            <br>
+
+			<p style="line-height:23px;">
+                <h1>Josh Millar</h1>
+                <!-- <img src="pp.jpg" width="160"> -->
+                <a href="mailto:joshua.millar22@imperial.ac.uk">email</a>,
+                <a href="https://github.com/j0shmillar/">github</a>
+			</p>
+
+            <br>
+
+            <p class="external">
+                <a href="https://scholar.google.com/citations?user=OsP7JHAAAAAJ&hl=en">Google Scholar</a>
+                <a href="https://github.com/HobbitLong">GitHub</a>
+            </p>
+		</div>
+	</div>
+
+	<div class="container">
+        <p>
+            I'm a PhD student at <a href="https://www.imperial.ac.uk/computing/">Imperial College London</a>, 
+            based at the <a href="https://netsys.doc.ic.ac.uk">Networks and Systems Lab</a> at <a href="https://ix.imperial.ac.uk">Imperial-X</a>
+            (<a href="https://www.google.com/maps/place/Translation+%26+Innovation+Hub/@51.5157794,-0.2270655,17z/data=!3m1!4b1!4m6!3m5!1s0x487610284ec458a5:0x2d02eef5b80a7bb0!8m2!3d51.5157761!4d-0.2244906!16s%2Fg%2F11f08_gfbx?entry=ttu">White City</a>).
+            You can also occasionally catch me at the <a href="https://www.imperial.ac.uk/energy-futures-lab/">Energy Futures Lab</a><!-- + [Grantham Institute](https://www.imperial.ac.uk/grantham/) -->. 
+            </p>
+            <p>
+            I'm supervised by <a href="https://www.imperial.ac.uk/people/h.haddadi">Prof. Hamed Haddadi</a> and <a href="https://www.imperial.ac.uk/people/david.boyle">Dr. David Boyle</a>.
+            </p>
+            </p>
+            <p>
+            My current research interests include:
+            <ul>
+                <li>energy-aware ML (+ battery-free sensing)</li>
+                <li>applied ML for sustainability</li>
+                <li>near-term forecasting (i.e. "nowcasting")</li>
+            </ul>
+            </p>
+	</div>
+
+    <div class="container">
+        <h2>Updates</h2>
+        <div>
+            <br>
+            <p>June, 2020: Gave a talk about <em>Contrastive Learning</em> at <a href="https://sites.google.com/view/visionseminar">MIT Vision Seminar</a>, find the <a href="https://google.com">Video Recording</a>.</p>
+        </div>
+    </div>
+
+	<div class="container">
+		<h2>Publications</h2>
+
+        <h4>2020</h4>
+
+        <div class="publication">
+            <img src="yonglong/infomin_logo2.png" class="publogo" width="200 px">
+            <p> 
+                <strong>
+                <a href="https://arxiv.org/abs/2005.10243" class="first">What Makes for Good Views for Contrastive Learning?</a>
+                </strong>
+                <br>
+                <br>
+                <b>Yonglong Tian</b>, Chen Sun, Ben Poole, Dilip Krishnan, Cordelia Schmid, Phillip Isola
+                <br>
+                <em>Advances In Neural Information Processing Systems (<b>NeurIPS</b>), 2020</em>
+                <br>
+                <span class="links">
+                    <a href="https://arxiv.org/abs/2005.10243" class="first">arXiv</a>
+                    <a href="https://github.com/HobbitLong/PyContrast/tree/master/pycontrast">Code</a>
+                </span>
+            </p>
+        </div>
+        <br>
+        <br>
+        <br>
+
+    <div class="container">
+        <!-- hitwebcounter Code START -->
+        <a href="http://www.hitwebcounter.com" target="_blank">
+        <img src="http://hitwebcounter.com/counter/counter.php?page=6276567&style=0027&nbdigits=5&type=page&initCount=512" title="Free track counters" Alt="Free track counters"   border="0" >
+        </a>                                        <br/>
+                                                <!-- hitwebcounter.com -->
+                                                </a>   
+        <a>
+        <div id="footer">
+            <div id="footer-text"></div>
+        </div>
+        </a></div><a>
+    </div>
 
 
+
+</body></html>
