@@ -14,170 +14,114 @@
   <title>{{ site.name }}</title>
 
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Link to modern Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+  
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-    }
-    
-    h1, h2, h3 {
-      margin-top: 0;
-    }
-    
-    h1 {
-      font-size: 2.5em;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-size: 1.8em;
-      font-weight: 600;
-    }
-
-    h3 {
-      font-size: 1.5em;
-      font-weight: 500;
-    }
-
-    p {
-      font-size: 1em;
-      line-height: 1.6;
-    }
-
-    a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    table {
-      width: 100%;
-      max-width: 800px;
-      border-collapse: collapse;
-      margin: auto;
-      background-color: white;
-    }
-
-    td {
-      padding: 1rem;
-      vertical-align: top;
-    }
-
-    img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .profile-img {
-      max-width: 60%;
-      margin: auto;
-      border-radius: 50%;
-    }
-
-    .contact-links {
-      text-align: center;
-    }
-
-    .contact-links a {
-      margin: 0 0.5rem;
+      font-family: 'Roboto', sans-serif;
     }
   </style>
 </head>
 
 <body>
-  <table>
-    <tr>
-      <td style="width: 60%;">
-        <h1>Josh Millar</h1>
-        <p>I'm a CS PhD at <a href="https://www.imperial.ac.uk/computing/">Imperial</a>, based in the 
-          <a href="https://netsys.doc.ic.ac.uk">Networks and Systems Lab</a> at 
-          <a href="https://ix.imperial.ac.uk">Imperial-X</a>.
-        </p>
-        <p>You can also occasionally catch me at the 
-          <a href="https://www.imperial.ac.uk/energy-futures-lab/">Energy Futures Lab</a>.
-        </p>
-        <p>I'm supervised by <a href="https://www.imperial.ac.uk/people/h.haddadi">Prof. Hamed Haddadi</a> 
-          and <a href="https://www.imperial.ac.uk/people/david.boyle">Dr. David Boyle</a>.
-        </p>
-        <p class="contact-links">
-          <a href="mailto:jm4622@ic.ac.uk">Email</a> /
-          <a href="https://github.com/j0shmillar">GitHub</a> /
-          <a href="https://mastodon.social/@j0shmillar">Mastodon</a>
-        </p>
-      </td>
-      <td style="width: 40%;">
-        <img class="profile-img" src="images/pp.jpg" alt="profile photo">
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h1>
+                Josh Millar
+              </h1>
+              <p>I'm a CS PhD at <a href="https://www.imperial.ac.uk/computing/">Imperial</a>, 
+              based in the <a href="https://netsys.doc.ic.ac.uk">Networks and Systems Lab</a> at <a href="https://ix.imperial.ac.uk">Imperial-X</a>.
+              <!-- (<a href="https://www.google.com/maps/place/Translation+%26+Innovation+Hub/@51.5157794,-0.2270655,17z/data=!3m1!4b1!4m6!3m5!1s0x487610284ec458a5:0x2d02eef5b80a7bb0!8m2!3d51.5157761!4d-0.2244906!16s%2Fg%2F11f08_gfbx?entry=ttu">White City</a>). -->
+              <br>
+              You can also occasionally catch me at the <a href="https://www.imperial.ac.uk/energy-futures-lab/">Energy Futures Lab</a><!-- + [Grantham Institute](https://www.imperial.ac.uk/grantham/) -->. 
+              </p>
+              <p>
+              I'm supervised by <a href="https://www.imperial.ac.uk/people/h.haddadi">Prof. Hamed Haddadi</a> and <a href="https://www.imperial.ac.uk/people/david.boyle">Dr. David Boyle</a>.
+              </p>
+              <p style="text-align:center">
+                <a target="_blank" href="jm4622@ic.ac.uk"> Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/j0shmillar">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://mastodon.social/@j0shmillar"> Mastodon </a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:60%;max-width:60%" alt="profile photo" src="images/pp.jpg">
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+              <p>
+                My work looks at energy-aware ML, low-power sensing, and wireless sensor networks.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.youtube %}
+              <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
       </td>
     </tr>
-  </table>
-
-  <table>
-    <tr>
-      <td>
-        <h2>Research</h2>
-        <p>My work focuses on energy-aware ML, low-power sensing, and wireless sensor networks.</p>
-      </td>
-    </tr>
-  </table>
-
-  <table>
-    {% for post in site.posts %}
-    {% for cat in post.categories %}
-    {% if cat == 'research' %}
-    <tr>
-      <td style="width: 25%; min-width: 120px;">
-        <img src="{{ post.image }}" alt="project image">
-      </td>
-      <td style="width: 75%;">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.authors }}</p>
-        <p><em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}</p>
-
-        {% if post.arxiv %}
-        <a href="{{ post.arxiv }}">arxiv</a> /
-        {% endif %}
-        {% if post.paper %}
-        <a href="{{ post.paper }}">paper</a> /
-        {% endif %}
-        {% if post.video %}
-        <a href="{{ post.video }}">video</a> /
-        {% endif %}
-        {% if post.code %}
-        <a href="{{ post.code }}">code</a> /
-        {% endif %}
-        {% if post.poster %}
-        <a href="{{ post.poster }}">poster</a> /
-        {% endif %}
-        {% if post.slides %}
-        <a href="{{ post.slides }}">slides</a> /
-        {% endif %}
-        {% if post.website %}
-        <a href="{{ post.website }}">website</a> /
-        {% endif %}
-        {% if post.youtube %}
-        <a href="{{ post.youtube }}">youtube</a>
-        {% endif %}
-        <p>{{ post.excerpt }}</p>
-      </td>
-    </tr>
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
   </table>
 </body>
 
