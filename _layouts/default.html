@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-E00L9PT3V9');
@@ -22,11 +22,20 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
   
-  <style>
+  <!-- <style>
     body {
       font-family: 'Roboto', sans-serif;
+      font-size: 0.9em; /* Makes the font smaller */
     }
-  </style>
+
+    table {
+      margin-bottom: 0; /* Reduces spacing between tables */
+    }
+
+    td {
+      padding: 1%; /* Reduces padding in table cells */
+    }
+  </style> -->
 </head>
 
 <body>
@@ -65,7 +74,7 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                I'm interested in Photogrammetry, 3D computer vision, Real-time rendering, Autonomous driving.
+                I mainly look at embedded ML and wireless sensor networks, particularly for biodiversity and ecosystem sensing.
               </p>
             </td>
           </tr>
