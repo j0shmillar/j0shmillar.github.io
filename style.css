@@ -13,7 +13,11 @@ ul li::before {
   margin-right: 8px;
 }
 
-a[href*="j0shmillar"] {
+a[href="https://github.com/j0shmillar"]:contains("View my GitHub profile") {
+  display: none !important;
+}
+
+header h1 {
   display: none;
 }
 
