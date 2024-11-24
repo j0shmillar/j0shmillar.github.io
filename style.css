@@ -13,13 +13,10 @@ ul li::before {
   margin-right: 8px;
 }
 
-img {
-  max-width: 150px; /* Adjust the size as needed */
-  height: auto;
-  display: block;
-  margin: 0 auto; /* Center the image */
+a[href*="github.com"] {
+  display: none;
 }
 
 .site-footer {
-  display: none;
+  display: none !important;
 }
