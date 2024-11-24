@@ -12,3 +12,14 @@ ul li::before {
   content: "- ";
   margin-right: 8px;
 }
+
+img {
+  max-width: 150px; /* Adjust the size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+.site-footer {
+  display: none;
+}
