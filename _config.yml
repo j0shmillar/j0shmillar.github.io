@@ -1,7 +1,5 @@
 title: Josh Millar
-logo: images/pp.jpg 
-description: 
+logo: images/pp.jpg
+description:
 theme: jekyll-theme-minimal
-markdown: kramdown
-sass:
-  style: compressed
+include: [style.css]

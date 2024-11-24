@@ -1,9 +1,9 @@
 body {
   background-color: white;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* Use desired font */
 }
 
-/* Customize bullet points */
+/* Change bullet points to '-' */
 ul {
   list-style-type: none;
 }
