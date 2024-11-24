@@ -1,5 +1,5 @@
 ---
-title: Josh Millar
+title: 
 ---
 
 <link rel="stylesheet" href="style.css">
