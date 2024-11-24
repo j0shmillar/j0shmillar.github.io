@@ -1,3 +1,9 @@
+---
+title: Josh Millar
+---
+
+<link rel="stylesheet" href="style.css">
+
 ### About
 
 I'm a CS PhD at the [Networks and Systems Lab](https://netsys.doc.ic.ac.uk), [Imperial](https://www.imperial.ac.uk/computing/). I'm also a visiting PhD at [Cambridge](https://www.cst.cam.ac.uk), part of the [Energy and Environment Group](https://www.cst.cam.ac.uk/research/eeg). 
