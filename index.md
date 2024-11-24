@@ -4,7 +4,9 @@ I'm a CS PhD at the [Networks and Systems Lab](https://netsys.doc.ic.ac.uk), [Im
 
 [GitHub](https://github.com/j0shmillar) / [Bluesky](https://bsky.app/profile/jdmillar.bsky.social)
 
-My research 
+Current [research](https://www.cst.cam.ac.uk/news/meet-terra-ai-aiming-map-terrestrial-life-planet) interests include energy-aware ML and low-power sensing, particularly for biodiversity/ecosystem sensing.
+
+I'm speaking at Cambridge on Nov 15th, and you can watch [here](https://cl-cam-ac-uk.zoom.us/j/4361570789?pwd=Nkl2T3ZLaTZwRm05bzRTOUUxY3Q4QT09&amp;from=addon)!
 
 ### Publications
 
