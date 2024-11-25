@@ -18,7 +18,8 @@ I'm speaking at Cambridge on Nov 15th, and you can watch [here](https://cl-cam-a
 
 Millar, J., Harder, P., Freischem, L., Weiss, P., Stier, P. \
 Towards Downscaling Global AOD with Machine Learning \
-ICLR 2024 (2024) [pdf](https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/iclr2024/20/paper.pdf)
+ICLR 2024 (2024) \
+[pdf](https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/iclr2024/20/paper.pdf)
 
 ### Talks
 
