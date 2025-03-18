@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Site</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Typography */
+        h1 {
+            color: #0066cc;
+            font-weight: normal;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #0066cc;
+            font-weight: normal;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #009900;
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        code {
+            font-family: 'Courier New', monospace;
+            background-color: #f7f7f7;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        /* Layout */
+        header {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        /* Navigation */
+        nav {
+            margin: 20px 0;
+            font-size: 1em;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #0066cc;
+            text-decoration: none;
+            padding: 5px;
+            border-bottom: 1px solid transparent;
+        }
+        
+        nav a:hover, nav a.active {
+            border-bottom: 1px solid #0066cc;
+        }
+        
+        /* Main content */
+        main {
+            min-height: 70vh;
+        }
+        
+        /* Pages */
+        .page {
+            display: none;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        /* News feed */
+        .news-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .news-date {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        /* Blog */
+        .blog-post {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .blog-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .photo-item {
+            border: 1px solid #eee;
+            padding: 5px;
+        }
+        
+        .photo-item img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .photo-caption {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #333;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        button {
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            padding: 8px 16px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+        }
+        
+        button:hover {
+            background-color: #eee;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .social-links {
+            margin-top: 10px;
+        }
+        
+        .social-links a {
+            margin-right: 15px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <h1>Josh Millar :: mysite</h1> -->
+        <p>Josh Millar</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-link active" data-page="home">home</a></li>
+            <li><a href="#about" class="nav-link" data-page="about">about</a></li>
+            <li><a href="#blog" class="nav-link" data-page="blog">blog</a></li>
+            <li><a href="#images" class="nav-link" data-page="images">images</a></li>
+            <li><a href="#papers" class="nav-link" data-page="papers">papers</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <h2>// news</h2>
+            <div class="news-feed">
+                <article class="news-item">
+                    <h3>blitz: A framework for cross-platform mcu model compilation</h3>
+                    <p class="news-date">/* March 15, 2025 */</p>
+                    <p>WIP</p>
+                    <a href="#">read more</a>
+                </article>
+            </div>
+        </section>
+        
+        <!-- About Page -->
+        <section id="about" class="page">
+            <h2>// about</h2>
+            <p>I'm a CS PhD at <a href="https://www.imperial.ac.uk/computing/">Imperial</a>, part of the <a href="https://netsys.doc.ic.ac.uk">Networks and Systems</a> group.</p>
+                
+            <p>I also spend time PhD-ing at <a href="https://www.cst.cam.ac.uk">Cambridge</a>, with the <a href="https://www.cst.cam.ac.uk/research/eeg">Energy and Environment</a> group.</p>
+                
+            <p>I'm a visiting researcher at <a href="https://www.nokia.com/bell-labs/">Nokia Bell Labs</a> (Cambridge).</p>
+            
+            <p>My work focuses on ML for ultra-low-power platforms.</p>
+
+            <p>Reach out at <pre>jm4622 (at) ic.ac.uk OR jdm225 (at) cam.ac.uk</pre> </p>
+        </section>
+        
+        <section id="blog" class="page">
+            <h2>// blog</h2>
+            <!-- <article class="blog-post">
+                <h3>minimalism.in.code()</h3>
+                <p class="blog-meta">/* Published: March 16, 2025 | Category: ... */</p>
+                <p> ... <p>
+                <a href="#">continue_reading()</a>
+            </article> -->
+        </section>
+        
+        <section id="images" class="page">
+            <h2>// images</h2>
+            <!-- <p>some ....</p> -->
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="/api/placeholder/400/300" alt="placeholder">
+                    <div class="photo-caption">/* placeholder */</div>
+                </div>
+            </div>
+        </section>
+      
+        <section id="papers" class="page">
+            <h2>// papers</h2>
+            <!-- <article class="blog-post">
+                <h3>minimalism.in.code()</h3>
+                <p class="blog-meta">/* Published: March 16, 2025 | Category: ... */</p>
+                <p> ... <p>
+                <a href="#">continue_reading()</a>
+            </article> -->
+        </section>
+
+        <!-- <section id="contact" class="page">
+            <h2>// contact</h2> 
+        </section> -->
+    </main>
+    
+    <footer>
+        <p>© 2025 | built with pure HTML, CSS, and JS</p>
+        <div class="social-links">
+            <a href="https://github.com/j0shmillar">github</a>
+            <a href="https://bsky.app/profile/jdmillar.bsky.social">bluesky</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const targetPage = this.getAttribute('data-page');
+                    const pages = document.querySelectorAll('.page');
+                    pages.forEach(page => page.classList.remove('active'));
+                    document.getElementById(targetPage).classList.add('active');
+                    
+                    history.pushState(null, null, '#' + targetPage);
+                });
+            });
+            
+            if (location.hash) {
+                const targetPage = location.hash.substring(1);
+                const targetLink = document.querySelector(`.nav-link[data-page="${targetPage}"]`);
+                if (targetLink) {
+                    targetLink.click();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
